@@ -10,9 +10,21 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        
+        <div id="menu">
+            <<ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="interests.html">Interests</a></li
+
+            </ul>
+
+        </div>
+        
+        
         <?php 
             echo "Hello World";
-            include_once 'cv.html';
         ?>
     </body>
 </html>
