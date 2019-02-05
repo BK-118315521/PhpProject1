@@ -10,8 +10,9 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
+        <?php 
             echo "Hello World";
+            include_once 'cv.html';
         ?>
     </body>
 </html>
