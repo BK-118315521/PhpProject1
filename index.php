@@ -12,7 +12,7 @@ and open the template in the editor.
     <body>
         
         <div id="menu">
-            <<ul>
+            <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="index.html">Index</a></li>
                 <li><a href="cv.html">CV</a></li>
