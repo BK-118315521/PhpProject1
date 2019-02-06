@@ -22,6 +22,7 @@ and open the template in the editor.
 
         </div>
         
+        <button onclick="window.location.href='cv.html'">My CV</button>
         
         <?php 
             echo "Hello World";
