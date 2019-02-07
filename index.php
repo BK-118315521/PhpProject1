@@ -22,14 +22,20 @@ and open the template in the editor.
 
         </div>
         
+        
+              
         <style>
+            
             body{
                background-color: #a5a5a5;  
             }
             button{
                background-color: #faf9f9
             }
+            
         </style>
+        
+        
         <button onclick="window.location.href='cv.html'">My CV</button>
         
         <button onclick="window.location.href='Index.html'">Index</button>
