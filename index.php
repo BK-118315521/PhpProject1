@@ -30,8 +30,11 @@ and open the template in the editor.
                background-color: #a5a5a5;  
             }
             button{
-               background-color: #faf9f9
+               background-color: #faf9f9;
+               text-color: #474056 ;
             }
+            
+            
             
         </style>
         
