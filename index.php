@@ -10,44 +10,36 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        
-        <div id="menu">
-            <ul>
-                <li><a href="index.php">Home </a></li>
-                <li><a href="index.html">Index</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="interests.html">Interests</a></li
-
-            </ul>
-
-        </div>
-        
-        
-              
+         
         <style>
             
             body{
                background-color: #a5a5a5;  
             }
             button{
+               
                background-color: #faf9f9;
                text-color: #474056 ;
+               width: 300px;
+               height: 300 px;
+               padding: 30PX;
+               align-center: 200 px;
             }
             
-            
-            
+                       
         </style>
-        
+       
         
         <button onclick="window.location.href='cv.html'">My CV</button>
+        <br></br>
         
         <button onclick="window.location.href='Index.html'">Index</button>
-        
+            <br></br>
+            
         <button onclick="window.location.href='interests.html'">My Interests</button>
+        <br></br>
         
         
         
-        
-        
-            </body>
+        </body>
 </html>
