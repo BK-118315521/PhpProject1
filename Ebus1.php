@@ -11,7 +11,7 @@ and open the template in the editor.
         <script language="javascript" type="text/javascript">
             function packageTotal()
             // Enter prices here
-            var x =1000;
+            var x = 1000;
             var y = 2000;
             var z = 3000;
             
