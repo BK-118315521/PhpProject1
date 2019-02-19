@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Feb-2019, 12:16:39
+    Author     : 118315521
+*/
+body{
+    background-color: #488b49;
+}
+
+h1{
+    color:yellow;
+}
+
+p{
+    color: white ;
+    
+    font-size: 20px;
+}
+
+img{
+    float: right
+}
+
+table{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 65%;
+  color: black;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #3d7499;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3d7499;
+  color: black;
+}
+
+
+.back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      display: block;
+      padding: 6px;
+      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background:#f5f5f5;
+      font-weight: bold;
+      font-size: 15px;
+      color: black;
+      -webkit-transition: all 200ms ease-out;
+      -moz-transition: all 200ms ease-out;
+      -o-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+      background-color: #edf2f4;
+    }
+    .back:hover {
+      background: #eee;
+      background-color: #edf2f4;
+    }
