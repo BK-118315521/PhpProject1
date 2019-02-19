@@ -57,6 +57,7 @@ document.calculator.wholeTotal.value = wholeTotal;
          
          <br />
          <input type="radio" name="programType" id="basicProgram" value="Basic" /> Basic
+         <br />
          <input type="radio" name="programType" id="proProgram" value="Pro" checked /> Pro  
          
          <!-- Here Results will be displayed -->
