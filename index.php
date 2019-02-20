@@ -35,7 +35,7 @@ and open the template in the editor.
         <button onclick="window.location.href='cv.html'">My CV</button>
         <br></br>
         
-                  
+        
         <button onclick="window.location.href='interests.html'">My Interests</button>
         <br></br>
         
