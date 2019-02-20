@@ -23,9 +23,8 @@ and open the template in the editor.
                width: 300px;
                height: 300 px;
                padding: 30PX;
-               align-center: 200 px;
-               margin-left: auto;
-               margin-right: auto;
+               float: center;
+               
             }
              
                       
