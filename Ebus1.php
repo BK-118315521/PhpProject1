@@ -24,6 +24,7 @@ function subTotal() {
         } else if (document.getElementById('autonomousProgram').checked) {
          // Pro package is checked
          document.calculator.total.value = y;
+         
          } else if (document.getElementById('immersiveProgram').checked) {
          // Pro package is checked
          document.calculator.total.value = p;
@@ -62,7 +63,7 @@ document.calculator.wholeTotal.value = wholeTotal;
          <br />
          <input type="radio" name="programType" id="blockchainProgram" value="Blockchain" />    Blockchain @ $1000
          <br />
-         <input type="radio" name="programType" id="autonomousProgram" value="autonomous" checked />    Autonomous Things (Robots) @ 2000
+         <input type="radio" name="programType" id="autonomousProgram" value="Autonomous" checked />    Autonomous Things (Robots) @ $2000
          <br />
          <input type="radio" name="programType" id="immersiveProgram" value="Immersive" checked />    Immersive Experience @ $3000
          
