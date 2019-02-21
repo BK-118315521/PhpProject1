@@ -13,16 +13,18 @@ and open the template in the editor.
                  <!--assigning values to the radio buttons-->
 function subTotal() {
  //Enter in Prices Here
- var x = 5; 
- var y = 10;
- var p = x + y * 12;
- var b = y * 12;
+ var x = 1000; 
+ var y = 2000;
+ var p = 3000;
  
-    if (document.getElementById('basicProgram').checked) {
+    if (document.getElementById('blockchainProgram').checked) {
      //Basic package is checked
-     document.calculator.total.value = b;
+     document.calculator.total.value = x;
      
-        } else if (document.getElementById('proProgram').checked) {
+        } else if (document.getElementById('autonomousProgram').checked) {
+         // Pro package is checked
+         document.calculator.total.value = y;
+         } else if (document.getElementById('immersiveProgram').checked) {
          // Pro package is checked
          document.calculator.total.value = p;
     }
@@ -50,15 +52,19 @@ document.calculator.wholeTotal.value = wholeTotal;
 
     
      <body>
+            <H1><b><u>Select a Consulting Service</u></b></H1>
+
               <!-- Opening a HTML form -->
          <form name="calculator">
              
          <!--User fills out form here -->
          
          <br />
-         <input type="radio" name="programType" id="basicProgram" value="Basic" /> Basic
+         <input type="radio" name="programType" id="blockchainProgram" value="Blockchain" />    Blockchain @ $1000
          <br />
-         <input type="radio" name="programType" id="proProgram" value="Pro" checked /> Pro  
+         <input type="radio" name="programType" id="autonomousProgram" value="autonomous" checked />    Autonomous Things (Robots) @ 2000
+         <br />
+         <input type="radio" name="programType" id="immersiveProgram" value="Immersive" checked />    Immersive Experience @ $3000
          
          <!-- Here Results will be displayed -->
          
@@ -67,7 +73,7 @@ document.calculator.wholeTotal.value = wholeTotal;
          <br>
          <input type="button" value="Subtotal" onclick="javascript:subTotal();">
          </br>
-         
+                  
          Discount: <input type="text" name="discount">
          <br>
          <input type="button" value="Discount" onclick="javascript:calcDisc();">
