@@ -1,95 +1,122 @@
-<?php?>
-<!--
-To change this licence header, choose Licence Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-
-     <head>
-         <title>Calculator</title>
-             
-<script language ="javascript" type="text/javascript">
-                 <!--assigning values to the radio buttons-->
-function subTotal() {
- //Enter in Prices Here
- var x = 1000; 
- var y = 2000;
- var p = 3000;
- 
-    if (document.getElementById('blockchainProgram').checked) {
-     //Basic package is checked
-     document.calculator.total.value = x;
-     
-        } else if (document.getElementById('autonomousProgram').checked) {
-         // Pro package is checked
-         document.calculator.total.value = y;
-         
-         } else if (document.getElementById('immersiveProgram').checked) {
-         // Pro package is checked
-         document.calculator.total.value = p;
-    }
-         
- }
-
-<!--Calculations for discount and total-->
-function calcDisc(){
-var subTot = document.calculator.total.value;
-var discTotal = ((subTot /100 *10))
-document.calculator.discount.value = discTotal;
-}
-
-function calcTotal(){
-var subTott = document.calculator.total.value;
-
-var discTotal = document.calculator.discount.value;
-
-var wholeTotal = (subTott - discTotal);
-
-document.calculator.wholeTotal.value = wholeTotal;
-}
-    </script>  
+<?php
+session_start();
+$totalValue="";
+$_SESSION('txtTotal') = $totalValue;
+?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http.//www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ebusiness 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
-
-    
-     <body>
-            <H1><b><u>Select a Consulting Service</u></b></H1>
-
-              <!-- Opening a HTML form -->
-         <form name="calculator">
-             
-         <!--User fills out form here -->
-         
-         <br />
-         <input type="radio" name="programType" id="blockchainProgram" value="Blockchain" />    Blockchain @ $1000
-         <br />
-         <input type="radio" name="programType" id="autonomousProgram" value="Autonomous" checked />    Autonomous Things (Robots) @ $2000
-         <br />
-         <input type="radio" name="programType" id="immersiveProgram" value="Immersive" checked />    Immersive Experience @ $3000
-         
-         <!-- Here Results will be displayed -->
-         
-         <br />
-         Subtotal: <input type="text" name="total">
-         <br>
-         <input type="button" value="Subtotal" onclick="javascript:subTotal();">
-         </br>
-                  
-         Discount: <input type="text" name="discount">
-         <br>
-         <input type="button" value="Discount" onclick="javascript:calcDisc();">
-         </br>
-         
-         Total: <input type="text" name="wholeTotal">
-         <br>
-         <input type="button" value="Total" onclick="javascript:calcTotal();">
-         
-         
-         </form>
-
-
-
-
-     </body>
-
-</html>
+        <body>
+        <div class="form">
+            <form name="intCalc" method="post" action="Ebus3.php">
+        <h1>Shop Calculator</h1>    
+        <hr/>
+        <center>
+            <table cellspacing="10">
+                <tr>
+                    <td><b>Beverage</b></td> 
+                </tr>
+                <tr>
+                    <td>Coca-Cola</td>
+                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1" /></td>
+                </tr>
+                <tr>
+                    <td>Sprite</td>
+                    <td><input type="radio" id="Sprite" name="rdoGroup" value="5" /></td>
+                </tr>
+                <tr>
+                    <td>Fanta</td>
+                    <td><input type="radio" id="Fanta" name="rdoGroup" value="30" /></td>
+                </tr>
+            </table>
+        </center>
+        <br/>
+                <center>
+            <table cellspacing="10">
+                <tr>
+                    <td><b></b></td>
+                    <td><b>Amount</b></td>
+                </tr>
+                <tr>
+                    <td>Sub Total</td>
+                    <td><input type="text" id="txtSubTot" name="txtSub" readonly/></td>
+                </tr>
+                <tr>
+                    <td>Discount @ 30%</td>
+                    <td><input type="text" id="txtDisc" name="txtDisc" readonly/></td>
+                </tr>
+                <tr>
+                    <td>+ VAT @ 40%</td>
+                    <td><input type="text" id="txtVAT" name="txtVAT" readonly/></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type="text" id="txtTotal" name="txtTotal" value="" readonly/></td>
+                </tr>
+            </table>
+        </center>
+        <br />
+        
+        <center>
+            <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount"/>
+            <input type="button" name="btnClear" id="btnClear" onclick="AmountClear()" value="Clear"/>
+            <input type="submit" name="btnProceed" id="btnProceed" onclick="" value="Proceed"/>
+        </center>
+            </form>
+        </div>
+        
+            <script type="text/javascript">
+                function calcSub(){
+                    //Assigning variables to the values//
+                    var subAmount = parseFloat(document.getElementById('txtSubTot').value);
+                    var CocaCola = parseFloat(document.getElementById('CocaCola').value);
+                    var Sprite = parseFloat(document.getElementById('Sprite').value);
+                    var Fanta = parseFloat(document.getElementById('Fanta').value);
+                    
+                    // if radio buttons are clicked, values are assigned//
+                    if (document.getElementById('CocaCola').checked) {
+                        document.intCalc.txtSubTot.value=CocaCola;
+                        subAmount=CocaCola;
+                        calculation(subAmount);
+                        
+                    }
+                   else if (document.getElementById('Sprite').checked) {
+                        document.intCalc.txtSubTot.value=Sprite;
+                        subAmount=Sprite;
+                        calculation(subAmount);
+                        
+                    }
+                    else if (document.getElementById('Fanta').checked) {
+                        document.intCalc.txtSubTot.value=Fanta;
+                        subAmount=Fanta;
+                        calculation(subAmount);
+                    }
+                } 
+                
+                //function for calculationg the values//
+                function calculation(parmsTotal) {
+                    var subTotal = parseFloat(parmsTotal);
+                    var discCalc = parseFloat(subTotal * 0.30);
+                    var vatCalc= parseFloat(subTotal * 0.40);
+                    var total = parseFloat(subTotal - discCalc + vatCalc);
+                    
+                    //Inserting thrm intp thr correct fields//
+                    document.intCalc.txtDisc.value = discCalc;
+                    document.intCalc.txtVat.value = vatCalc;
+                    document.intCalc.txtTotal.value = total;
+                }
+                
+                function AmountClear() {
+                    document.getElementById("txtSubTot").value="";
+                    document.getElementById("txtDisc").value="";
+                    document.getElementById("txtVAT").value="";
+                    document.getElementById("txtTotal").value="";
+                }
+                    
+            </script>
+    </body>
+    </html>
