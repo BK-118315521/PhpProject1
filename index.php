@@ -7,17 +7,19 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Index</title>
     </head>
     <body>
          
         <style>
             
             body{
-               background-color: #a5a5a5;  
+               background-color: #a5a5a5; 
+               font-family: courier new;
             }
             
             button{
+                font-family: courier new;
                background-color: #faf9f9;
                text-color: #474056 ;
                width: 300px;
@@ -30,6 +32,12 @@ and open the template in the editor.
                       
         </style>
        
+    <center>
+        <h1><b><u>Welcome to the Index for my Project. To continue please press one of the below buttons!</u></b>
+        <br />
+        <br />
+        <br />
+        <br />
         
         <button onclick="window.location.href='cv.html'">My CV</button>
         <br></br>
@@ -37,7 +45,7 @@ and open the template in the editor.
         
         <button onclick="window.location.href='interests.html'">My Interests</button>
         <br></br>
-        
+        </center>
          
        
         </body>

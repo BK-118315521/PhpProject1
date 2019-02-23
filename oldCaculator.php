@@ -53,6 +53,7 @@ document.calculator.wholeTotal.value = wholeTotal;
 
     
      <body>
+<center>
             <H1><b><u>Select a Consulting Service</u></b></H1>
 
               <!-- Opening a HTML form -->
@@ -86,7 +87,7 @@ document.calculator.wholeTotal.value = wholeTotal;
          
          
          </form>
-
+</center>
 
 
 
