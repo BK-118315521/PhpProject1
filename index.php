@@ -23,7 +23,7 @@ and open the template in the editor.
                background-color: #faf9f9;
                text-color: #474056 ;
                width: 300px;
-               height: 300px;
+               height: 200px;
                padding: 30PX;
                float: center;
                
