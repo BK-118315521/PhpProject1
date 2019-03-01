@@ -19,7 +19,7 @@ $_SESSION['txtTotal'] = $totalValue;
                 
             </style>
         <div class="form">
-            <form name="intCalc" method="post" action="Ebus3.php">
+            <form name="intCalc" method="post" action="eBus2.php">
                 <center>
             <h1>Shop Calculator</h1>    
                 </center>
@@ -107,7 +107,7 @@ $_SESSION['txtTotal'] = $totalValue;
                     }
                 } 
                 
-                //function for calculationg the values//
+                //function for calculating the values//
                 function calculation(parmsTotal) {
                     var subTotal = parseFloat(parmsTotal);
                     var discCalc = parseFloat(subTotal * .10);
