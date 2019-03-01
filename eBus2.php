@@ -47,7 +47,7 @@ $phoneNumber="";
 						</tr>	
 						<tr>
 							<td>Phone Number</td>
-							<td><input type="text" id="txtNum" name="txtNum"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="" /></td>
+							<td><input type="text" id="txtNum" name="txtNum"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" value="" /></td>
 						</tr>	
 						<tr>
 							<td>Password</td>
