@@ -17,7 +17,17 @@ $_SESSION['txtTotal'] = $totalValue;
                     font-family: courier new;
                 }
                 
+                div {
+  background-color: #000000;
+  color:white ;
+  width: 300px;
+  border: 25px solid #6b0f1a;
+  padding: 25px;
+  margin: 25px;
+}
+                
             </style>
+        <center>
         <div class="form">
             <form name="intCalc" method="post" action="eBus2.php">
                 <center>
@@ -78,7 +88,7 @@ $_SESSION['txtTotal'] = $totalValue;
         </center>
             </form>
         </div>
-        
+        </center>
             <script type="text/javascript">
                 function calcSub(){
                     //Assigning variables to the values
