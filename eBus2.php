@@ -51,7 +51,7 @@ $phoneNumber="";
 						</tr>	
 						<tr>
 							<td>Password</td>
-							<td><input type="password" id="txtName" name="txtPassword" value="" /></td>
+							<td><input type="password" id="txtName" name="txtPassword" maxlength="4" value="" /></td>
 						</tr>	
 						<tr>
 							

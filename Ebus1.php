@@ -18,13 +18,13 @@ $_SESSION['txtTotal'] = $totalValue;
                 }
                 
                 div {
-  background-color: #000000;
-  color:white ;
-  width: 300px;
-  border: 25px solid #6b0f1a;
-  padding: 25px;
-  margin: 25px;
-}
+                    background-color: #000000;
+                    color:white ;
+                    width: 300px;
+                    border: 25px solid #6b0f1a;
+                    padding: 25px;
+                    margin: 25px;
+                  }
                 
             </style>
         <center>
