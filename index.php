@@ -14,7 +14,7 @@ and open the template in the editor.
         <style>
             
             body{
-               background-color: #a5a5a5; 
+               background-color: lightblue; 
                font-family: courier new;
             }
             
