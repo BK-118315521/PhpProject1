@@ -41,11 +41,11 @@ $_SESSION['txtTotal'] = $totalValue;
                 </tr>
                 <tr>
                     <td>Blockchain @ $1000</td>
-                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1000" /></td>
+                    <td><input type="radio" id="CocaCola" name="rdoGroup" value="1000"  required /></td>
                 </tr>
                 <tr>
                     <td>Autonomous Things @ $2000</td>
-                    <td><input type="radio" id="Sprite" name="rdoGroup" value="2000" /></td>
+                    <td><input type="radio" id="Sprite" name="rdoGroup" value="2000"  /></td>
                 </tr>
                 <tr>
                     <td>Immersive Experience @ $3000</td>

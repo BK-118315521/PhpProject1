@@ -32,6 +32,7 @@ $phoneNumber="";
                         }
                 
                     </style>
+                 
 			<form name="Details" method="post" action="eBus3.php">
 				<center>
                                     <h1><b><u>Enter in your details below</u></b></h1>
@@ -43,15 +44,15 @@ $phoneNumber="";
 						</tr>
 						<tr>
 							<td>Name</td>
-							<td><input type="text" id="txtName" name="txtName" value="" /></td>
+                                                        <td><input type="text" id="txtName" name="txtName" value="" required="" /></td>
 						</tr>	
 						<tr>
 							<td>Phone Number</td>
-							<td><input type="text" id="txtNum" name="txtNum"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" value="" /></td>
+							<td><input type="text" id="txtNum" name="txtNum"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" value="" required /></td>
 						</tr>	
 						<tr>
 							<td>Password</td>
-							<td><input type="password" id="txtName" name="txtPassword" maxlength="4" value="" /></td>
+							<td><input type="password" id="txtPassword" name="txtPassword" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="" required /></td>
 						</tr>	
 						<tr>
 							
