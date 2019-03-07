@@ -30,7 +30,7 @@ echo "The total value is $".$totalValue.".";
 <br/>
 <br/>
 <br/>
-<button onclick= 'window.location.href="consulting.html"'>Back to Consulting Services</button>
+<button onclick= 'window.location.href="consulting.html"'>Back to Consulting Services.</button>
 <button onclick= 'window.location.href="Ebus1.php"'>To purchase another package click here!</button>
 
 
