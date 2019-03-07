@@ -7,50 +7,50 @@ and open the template in the editor.
     Created on : 19-Feb-2019, 12:16:39
     Author     : 118315521
 */
-body{
-    background-color: #488b49;
-}
+    body{
+        background-color: #488b49;
+    }
 
-h1{
-    color:yellow;
-}
+    h1{
+        color:yellow;
+    }
 
-p{
-    color: white ;
-    
-    font-size: 20px;
-}
+    p{
+        color: white ;
 
-img{
-    float: right
-}
+        font-size: 20px;
+    }
 
-table{
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 65%;
-  color: black;
-}
+    img{
+        float: right
+    }
 
-table td, table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
+    table{
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 65%;
+      color: black;
+    }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+    table td, table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
 
-table tr:hover {background-color: #3d7499;}
+    table tr:nth-child(even){background-color: #f2f2f2;}
 
-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #3d7499;
-  color: black;
-}
+    table tr:hover {background-color: #3d7499;}
+
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #3d7499;
+      color: black;
+    }
 
 
-.back {
+    .back {
       position: absolute;
       top: 0;
       left: 0;

@@ -62,19 +62,19 @@ $_SESSION['txtTotal'] = $totalValue;
             </tr>
                 <tr>
                     <td>Sub Total</td>
-                    <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>
+                    <td><input type="text" id="txtSubTot" name="txtSub" readonly  required/></td>
                 </tr>
                 <tr>
                     <td>Discount @ 10%</td>
-                    <td><input type="text" id="txtDisc" name="txtDisc" readonly /></td>
+                    <td><input type="text" id="txtDisc" name="txtDisc" readonly  required/></td>
                 </tr>
                 <tr>
                     <td>+ VAT @ 20%</td>
-                    <td><input type="text" id="txtVAT" name="txtVAT" readonly /></td>
+                    <td><input type="text" id="txtVAT" name="txtVAT" readonly required /></td>
                 </tr>
                 <tr>
                     <td>Total</td>
-                    <td><input type="text" id="txtTotal" name="txtTotal" value="" readonly/></td>
+                    <td><input type="text" id="txtTotal" name="txtTotal" value="" readonly required/></td>
                 </tr>
             </table>
         </center>
