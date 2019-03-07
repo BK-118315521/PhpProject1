@@ -33,7 +33,7 @@ $phoneNumber="";
                 
                     </style>
                  
-			<form name="Details" method="post" action="eBus3.php">
+			<form name="Details" method="post" action="Ebus3.php">
 				<center>
                                     <h1><b><u>Enter in your details below</u></b></h1>
                                     <hr/>
